@@ -33,7 +33,7 @@ function WhatsApp() {
 		            pesan = $('#whatsapp .pesan').val();
 				$(this).attr('href', url_wa + '?phone=62 ' + tujuan + '&text=' +
 
-               '%2AHallo kak, saya' + nama + 'mau order lisensi template...%2A%0A' +
+               '%2AHallo kak, saya ' + nama + '. Mau order lisensi template...%2A%0A' +
                '_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _%0A' +
                ' %0A%2ANote%2A: ' + pesan + '%0A' +
                '_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _%0A' +
