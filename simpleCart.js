@@ -78,7 +78,7 @@ var tombolRemove = '<svg style="width:24px;height:24px" viewBox="0 0 24 24"><pat
                 currencies = {
                     IDR: {
                         code: "IDR",
-                        symbol: "Rp",
+                        symbol: "Rp. ",
                         name: "Rupiah Indonesia",
                     },
                 },
@@ -552,8 +552,14 @@ var tombolRemove = '<svg style="width:24px;height:24px" viewBox="0 0 24 24"><pat
                 jumlah: function (item, column) {
                     return [item.get(column.attr)];
                 },
-                ukuran: function (item, column) {
-                    return item.get(column.attr)];
+                warna: function (item, column) {
+                    return ["<span class='warna'>Warna :</span> " + item.get(column.attr)];
+                },
+                qty: function (item, column) {
+                    return ["<span class='qty'>qty </span> " + item.get(column.attr)];
+                },
+                tali: function (item, column) {
+                    return ["<span class='tali'>Jenis Tali :</span> " + item.get(column.attr)];
                 },
                 link: function (item, column) {
                     return [item.get(column.attr)];
@@ -567,7 +573,7 @@ var tombolRemove = '<svg style="width:24px;height:24px" viewBox="0 0 24 24"><pat
                 increment: function (item, column) {
                     return ["<a href='javascript:;' class='" + namespace + "_increment'>" + tombolPlus + "</a>"];
                 },
-                image: function (item, column) {
+                thumb: function (item, column) {
                     return ["<a href='" + item.get(column.attr) + "'><img src='" + item.get(column.attr) + "'/></a>"];
                 },
                 name: function (item, column) {
