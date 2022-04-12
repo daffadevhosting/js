@@ -33,7 +33,7 @@ function WhatsApp() {
 		            pesan = $('#whatsapp .pesan').val();
 				$(this).attr('href', url_wa + '?phone=62 ' + tujuan + '&text=' +
 
-               '%2AHallo kak, saya ' + nama + '. Mau order lisensi template...%2A%0A' +
+               'Hallo kak, saya %2A' + nama + '%2A. Mau order lisensi template...%0A' +
                '_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _%0A' +
                ' %0A%2ANote%2A: ' + pesan + '%0A' +
                '_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _%0A' +
@@ -44,6 +44,7 @@ function WhatsApp() {
 					tops = Number((screen.height / 2) - (h / 2)),
 					popupWindow = window.open(this.href, '', 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=1, copyhistory=no, width=' + w + ', height=' + h + ', top=' + tops + ', left=' + left);
                 popupWindow.focus();
+                window.location.reload();
 				return false;
 			}
 		}
