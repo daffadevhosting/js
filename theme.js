@@ -310,12 +310,12 @@ $(document).ready(function () {
 var license = 'MjE0MTc2ODA4MTkzOTEzMDc5NQ',
 myLicense = atob(license),
 tpllc = $('#BlogLicense').text(),
-second = 100;
+second = 20;
 console.log(myLicense);
 if (myLicense == tpllc) {
 return false
 } else {
-$('body').append('<style>body{background:#000000b3!important;overflow:hidden}#peringatan span{font-size:50px}#peringatan{z-index:999999;position:fixed;top:0;right:0;left:0;padding:16% 0;height:100%;text-align:center;background:#000000b3;color:#fff}@media only screen and (max-width: 680px){#peringatan{padding:60% 0;}h4{font-size:x-large!important;}}</style><div id="peringatan"><h4 style="margin-bottom: 35px;font-size:-webkit-xxx-large;">🔒️ Template is Locked Up</h4><span id="aktivasi">'+second+'</span><p style="margin-top: 20px;font-size: 18px;letter-spacing: 2px;line-height: 30px;">Mohon untuk tidak menghapus/mengganti link footer</p></div>');
+$('body').append('<style>body{background:#000000b3!important;overflow:hidden}#peringatan span{font-size:50px}#peringatan{z-index:999999;position:fixed;top:0;right:0;left:0;padding:14% 0;height:100%;text-align:center;background:#9b9b9b00;color:#fff}.card{border: 1px solid;border-radius: 5px;margin: auto 25%;padding: 40px;background: darkred;box-shadow: #00000033 0px 3px 1px -2px, #00000024 0px 2px 2px 0px, #0000001f 0px 1px 5px 0px;}@media only screen and (max-width: 680px){#peringatan{padding:60% 0;}.card {border: 1px solid;border-radius: 12px;margin: auto 2%;padding: 10px;background: darkred;}h4{font-size:x-large!important;}}</style><div id="peringatan"><div class="card"><h4 style="margin-bottom: 35px;font-size:-webkit-xxx-large;">🔒️ Template is Locked Up</h4><span id="aktivasi">'+second+'</span><p style="margin-top: 20px;font-size: 18px;letter-spacing: 2px;line-height: 30px;">Mohon untuk tidak menghapus/mengganti link footer<br/>Dan pastikan Kode Lisensi template sudah aktif.</p></div></div>');
 setInterval(function () {
 second <= 1 ? window.location.href = "https://daffadev.my.id/" : $('#aktivasi').text(--second);
 }, 1e3)
