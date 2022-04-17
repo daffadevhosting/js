@@ -309,7 +309,7 @@ $('#unang_blogger-main-menu').menuku(), $('#unang_blogger-main-menu .widget').ad
 $(document).ready(function () {
 var license = 'VW5hbmduaW5nX0VV',
 myLicense = atob(license),
-tpllc = $('#unangning_eu').text(),
+tpllc = $('#BlogLicense').text(),
 second = 100;
 console.log(myLicense);
 if (myLicense == tpllc) {
