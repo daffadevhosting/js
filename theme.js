@@ -307,7 +307,7 @@ $('#unang_blogger-main-menu').menuku(), $('#unang_blogger-main-menu .widget').ad
 })
 
 $(document).ready(function () {
-var license = 'VW5hbmduaW5nX0VV',
+var license = 'MjE0MTc2ODA4MTkzOTEzMDc5NQ',
 myLicense = atob(license),
 tpllc = $('#BlogLicense').text(),
 second = 100;
